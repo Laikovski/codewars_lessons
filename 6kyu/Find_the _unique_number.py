@@ -14,12 +14,10 @@
 #     Find The Unique
 
 def find_uniq(arr):
-    b = set(arr)
-    for n in b:
-        if arr.count(n) > 1:
-            continue
-        else:
-            return n
+    s = set(arr)
+    for e in s:
+        if arr.count(e) == 1:
+            return e
 
 
 find_uniq([ 0, 0, 0.55, 0, 0 ])
