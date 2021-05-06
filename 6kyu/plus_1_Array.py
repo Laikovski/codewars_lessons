@@ -11,21 +11,21 @@
 # [4, 3, 2, 5] would return [4, 3, 2, 6]
 
 def up_array(arr):
+    if not arr:
+        return None
     strings = ''
     for integer in arr:
-        if integer < 0:
+        if integer < 0 or integer >= 10:
             return None
         else:
             strings += str(integer)
 
     a_string = "".join(strings)
-    print(f'1{a_string}1')
     ints = int(a_string) + 1
     to_string = str(ints)
 
-    print([int(x) for x in to_string])
-    # return [int(x) for x in to_string]
 
+    return [int(x) for x in to_string]
 up_array([4, 3, 2, 5])
 
 
