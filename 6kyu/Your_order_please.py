@@ -22,3 +22,5 @@ def order(sentence):
         res += x[1] + ' '
     return res.rstrip()
 order("4of Fo1r pe6ople g3ood th5e the2")
+
+
