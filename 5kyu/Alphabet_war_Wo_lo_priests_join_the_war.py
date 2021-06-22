@@ -40,3 +40,6 @@ def alphabet_war(fight):
         return "Left side wins!"
     else:
         return "Let's fight again!"
+
+
+    fi
